@@ -4,6 +4,11 @@
 _Nur (2015) and Ruijuan (2010) have examined the interpersonal dimension in Mandela’s inauguration and in Obama’s victory speech respectively. Using these two studies as a starting point, investigate the same interpersonal dimension in a different political speech in order to see how generalizable Nur and Ruijuan’s results are. Variation may be: a politician with a different inclination, the same politician (Mandela or Obama) on a different occasion, a different type of audience, etc._
 
 ## Questions
+- What are the results I should compare with? The numbers, the numbers linked with roles of phenomena, or the final interpretations?
+- My theoretical background is very, very similar to that of Nur & Ruijuan. Is that an issue?
+- Is it fair to focus on the elements that were explored in both papers? ('all' and rhytmic features are explored only by Nur)
+
+### past
 - I chose to analyse Obama's inauguration speech from January 2009. Should the focus be on doing the same kind of analysis to Nur and Ye, and **then** comparing my findings with theirs, or instead focusing the analysis itself on examining the very same elements they examined, and comparing as I go? To what extent is it important to relate the differences to the different purposes/audiences, besides just stating that there are differences and therefore the particular findings of Nur & Ye don't generalise too well?
 - should it be in the format of an article, like Ye and Nur? it doesn't have to have an abstract (given the strict word limit), does it?
 - do excerpts from the data count towards the word limit?
