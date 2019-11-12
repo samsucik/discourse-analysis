@@ -42,6 +42,10 @@
 % Center caption text for images
 \usepackage[justification=centering]{caption}
 
+\newcounter{quotecount}
+\newcommand{\Quote}[1]{\vspace{0.4cm}\\ \addtocounter{quotecount}{1}%
+	\hspace*{1cm}\parbox{12cm}{\em #1}\hspace*{1cm}(\arabic{quotecount})\\[0.4cm]}
+
 % \onehalfspacing
 \title{\LARGE Introduction to Discourse Analysis -- Assignment 1}
 \date{}
@@ -53,7 +57,7 @@
 \,
 \vspace{-5em}
 
-\section*{Introduction}{
+\section{Introduction}{
 	% - Nur & Ruijuan analyse the ways in which 2 successful political speeches achieve this
 	% - in particular, they analyse the interpersonal metafunction (proposed by Halliday in context of SFL) of the language, focusing on mood modality and pronoun
 	% - they observe that the most dominant tools employed are positive declaratives, modals with high degree of modal committment, plural 1st person pronouns
@@ -80,7 +84,7 @@
 	Thus, and by analysing the same elements of Interpersonal Metafunction as \citeauthor{Ye}, I keep most variables fixed while varying the occasion, audience and aims of the speech in question. Then, in section TODO I elaborate on the findings of \citeauthor{Ye} and \citeauthor{Nur} and juxtapose them with mine.
 }
 
-\section*{Theoretical background}{
+\section{Theoretical background}{
 	% - Halliday developed SFL
 	% - language is functionally organised, it's shaped by the functions that is serves
 	In his works in Systemic Functional Linguistics, Michael Halliday views language as shaped by the functions it serves, as inherently functionally organised. The different functions are thus directly related to the different kinds of meaning language carries.
@@ -98,17 +102,21 @@
 	The different functions co-exist in language and are intertwined, but the interpersonal metafunction is what makes language a social instrument like in political speeches. A speaker can use elements of the metafunction to assume a role, change the \textit{social distance} between them and the audience, establish positive or close relationships, unite or divide, inspire and persuade.
 }
 
-\section*{Data}{
+\section{Data}{
 	% - january 2009, 2.5 months after victory
 	Barack Obama's inauguration speech took place in January 2009, 2.5 months after his victory speech (analysed by \citeauthor{Ye}).
 	% - context of global financial crisis and war in Iraq and environmental challenges
 	The world was amidst the global financial crisis, the US were involved in a war in Iraq, and the idea of an environmental crisis was becoming clearer.
 	% - focus on facing the difficulties (like ancestors did)
-	Obama names all these clearly and, by recalling the difficulties past generations of Americans faced throughout history with perseverance and high spirit, 
+	Obama names all these directly and, by recalling the difficulties past generations of Americans faced throughout history with perseverance and high spirit, 
 	% - it aims to unite all Americans and present US as a world leader
 	tries to motivate the audience to unite and fight again.
+	% differences: occasion, audience, goals
+	The speech was addressed to all Americans and even to other nations, and it tried to win the audience for the program of the upcoming presidency.
 	% - compared to victory speech, inauguration speech focuses more on presenting the main topics and program of the new president+government
-	Compared to the victory speech, Obama focuses much more on uniting all citizens and presenting the focus points of his upcoming presidency.
+	Hence, compared to the victory speech, Obama focuses much more on uniting all citizens (not just his supporters) and recalls common American values grounded in history to motivate his proposed actions. 
+	% similarities
+	Importantly, the speaker stays the same person with the same affiliation. Hence, I hypothesise that any observed differences are related mainly to the different situations.
 
 	% - I chose Obama's 2009 inauguration speech because I expect interesting similarities and differences with previous speeches:
 	%   - at the basic level, it's a presidential speech (like the others)
@@ -116,6 +124,117 @@
 	%   - as a speech by Obama, and coming only 2.5 months after his victory speech, I expect it to be similar
 	%   - on the other hand, differences with Obama2008 can be related to the different occasions (election victory vs inauguration), audiences and purposes:
 	%     - while the victory speech was aimed primarily for Obama's supporters, the inaugural speech was widely televised and addressed to all Americans and even to other nations
+}
+
+\section{Analysis}{
+	 %  - I analyse the dimensions of IM explored by both Nur and Ruijuan, i.e. mood, modality and personal pronouns.
+	For better comparability with \citeauthor{Nur} and \citeauthor{Ye}, I analyse the same elements of Interpersonal Metafunction: mood, modality and personal pronouns.
+ 	%  - Mood
+ 	\subsection{Mood}{
+		%    - The concept of Mood relates to the very nature of clause as exchange
+ 		At the interpersonal level, language interaction can be viewed as speaker-initiated exchange of a commodity: The speaker can either give or demand, and the commodity is either information or goods/services. 
+		%    - provides basis for interactions between addresser and audience in the form of 4 basic speech functions as exchanges of 2 types of commodity: 
+ 		The system of mood is then ``the expression of the speaker's choice of role in the communicative situation'' \citep{Halliday1970ModalityMood}, where choosing to give/demand information leads to statements/questions, and giving/demanding goods-and-services leads to offer/command. Note that while choosing (confrontational) commands can easily \textit{increase} the speaker-audience social distance, statements or offers can have the opposite effect. Thus, to bridge the gap, politicians often choose statements to get closer to the audience.
+		%    - the mood itself is in a clause represented by subject + finite (typically the subject-verb pair)
+		% statement (giving information), question (demanding information), offer (giving goods & services), and command (demanding g&s)
+
+		%    - declarative/imperative/interrogative
+		%      - observed: 106/9/0: 92/8/0%
+		%      - Ruijuan: 101/5/2: 94/5/1%
+		%      - Nur: 36/5/0: 88/12/0%
+		\begin{table}[h!tb]
+	      \centering
+	      \begin{sc}
+	        \begin{tabular}{l|ccc}
+	                 & declarative & imperative & interrogative \\
+	          \hline
+	          \hline
+	          here   & 92\%        & 8\%        & 0\% \\
+	          \hline
+	          Ye     & 94\%        & 5\%        & 1\% \\
+	          Nur    & 88\%        & 12\%       & 0\% \\
+	        \end{tabular}
+	      \end{sc}
+	      \caption{Percentage of types of main clauses (numbers from \citeauthor{Ye} and \citeauthor{Nur} for reference).}
+	      \label{tab:mood}
+	    \end{table}
+
+ 		Grammatically, statements are realised as declarative clauses, questions as interrogatives, and commands as imperatives. \autoref{tab:mood} shows that Obama uses almost exclusively declaratives. Their effective use helps him to communicate important values that unite all Americans:
+		%    - declarative examples
+		\Quote{On this day, we gather because we have chosen hope over fear, unity of purpose over conflict and discord.}
+ 		but also to then persuade and motivate:
+ 		\Quote{Today I say to you that the challenges we face are real.}
+ 		\Quote{Starting today, we must pick ourselves up, dust ourselves off, and begin again the work of remaking America.}
+ 		while still sounding relatable as opposed to confrontational or patronising.
+
+		%    - imperatives addressed to "others" countries and potential enemies (3x), and to all Americans (the Let form, 3x)
+		%    - imperative example:
+ 		The 9 imperative clauses serve two roles. They show strength and courage when confrontationally addressing others not compliant with the values:
+ 		\Quote{\normalfont To those leaders around the globe who seek to sow conflict, or blame their society's ills on the West,\em\  know that your people will judge you on what you can build, not what you destroy.}
+ 		In the other case, when addressing Americans, \textit{all} imperatives are used not in the usual way (to command someone), but instead using ``let'' to invite listeners to join in and act together.
+ 		\Quote{With hope and virtue, let us brave once more the icy currents, and endure what storms may come.}
+		%    - similar to previous findings. more imperatives in inaugural vs victory speeches may be attributed to presenting program and encouraging people to join and act in accordance with it
+
+		Altogether, both declaratives and imperatives help convey key messages (whether values or the new government's program) in a positive way, showing Obama as a strong leader who invites everyone to join him.
+
+		%    - **previous findings**:
+		%      - Nur: 
+		%        - declarative clauses dominate {_making the speech solemn and persuasive, thrivingly recalling Mandela and his countrymen’s long sufferings, expressing gratitude to cowarriors and supporters and promising to work for the actual freedom_}
+		%        - followed by imperatives (non-commanding Let) {_helping Mandela arouse people’s passion to dream and act together to earn equality & freedom; minimizes the social distance; making speech more emotive, appealing, and inspiring._}
+		%      - Ruijuan:
+		%        - declaratives dominate {_give as much as possible information to the audience, recalling election campaign, expressing gratitude to supporters, promising, inspiring the audience to face difficulties as one_}
+		%        - imperatives (Let) follow {_shorten distance, call to act together & overcome the difficulties.; make speech more moving, appealing and inspiring_}
+ 	}
+ 	%  - Modality
+ 	\subsection{Modality}{
+		%    - covering the range of meanings between yes and no, modality refers to how speaker's position, (un)certainty, (in)ability and attitude surface in semantic meaning
+		%    - one can go further and distinguish between:
+		%      - modalization as speaker's judgement of proposition in terms of probablity (possible -> certain) and usuality (sometimes->always)
+		%      - modulation as expressing speaker's sense of obligation (allowed->required) and inclination (willing->determined)
+		%      - but Halliday 1970 argues that these are "the same system in different functions", whereas modalization changes the meaning at the interpersonal level while modulation changes the content of the proposition at the ideational level
+		%    - both can be realised in various forms, using e.g. modal verbs, adjectives, adverbs...
+		%    - I limit myself to modal verbs, analysed in Nur and Ruijuan
+		%                | will/won't (future/wish) | would | must | can/cannot | could | be able to | other | total
+		%    - observed: | 19         (13/6)        | 1     | 8(6) | 12/6       | 0     | 0          | 8     | 54 might(2) shall(3) may(3)
+		%    - Ruijuan:  | 18         (7/11)        | ?     | 4    | 22         | ?     | ?          | 11    | 55
+		%    - Nur:      | 6          (?/?)         | ?     | 3    | 1          | 1     | 1          | 3     | 15
+
+		%    - **previous findings**
+		%      - Nur
+		%        - will dominates (as future predicator & symbol of determination)
+		%        - must follows {_conveys strong determination; calls audience to be determined to act towards common objectives_}
+		%        - scarse can {_encourages people to believe in their abilities to act together; minimizes gap_}
+		%      - Ruijuan
+		%        - can dominates {_weaken authority & shorten distance. 'Be able' showed in repeated “Yes we can”, encourages people to believe in themselves & ability to climb back into the light_}
+		%        - will follows {_shows strong mind and keen desire to lead through the difficulties; higher modal commitment confirms more actions will be definitely taken in the future_}
+		%        - must follows {_shows firm determination to overcome difficulties, call to actions to achieve targets_}
+		%    - Most dominant is the high commitment (will, must), but note that of 19 wills only 6 communicate strong will/determination, while 13 are simply markers of future tense. also, I identify 2 cases of must which I don't see as communicating urge, but simply obligation:
+		%      - "Less measurable but no less profound is a sapping of confidence across our land; a nagging fear that America's decline is inevitable, and that the next generation must lower its sights."
+		%      - "It must be earned."
+		%    - can is also dominant, BUT used only in 2x cases to strongly communicate the ability (in all other cases it's either negative, or communicating in a rather ordinary way the possibility/ability) -- note that Obama here doesn't use 'yes we can':
+		%      - "All this we can do."
+		%      - "Guided by these principles once more, we can meet those new threats that demand even greater effort, even greater cooperation and understanding between nations."
+		%    - I think the mostly future use of will (compared with Obama's victory speech) is because now he talks about the program, i.e. what the new government will do. The victory speech was perhaps more about general determination than concrete plans.
+	}
+ %  - Personal pronoun (everything in percent)
+ %    -          | I  | We (excl./incl.) | Us | Our | You | Your | S/he | They/Their/them/it | total
+ %    - observed | 1  | 27 (4/23)        | 10 | 30  | 6   | 1    | 0.5  | 8/4/2/8            | 224
+ %    - Ruijuan  | 19 | 31               | 8  | 17  | 10  | 3    | 10   | 2/?/?/?            | 131
+ %    - Nur      | 1  | 34               | 11 | 26  | 3   | 0    | 0    | 1/9/3/13           | 80
+
+ %    - **previous findings**
+ %      - Nur
+ %        - 1st: plural replaces singular {_inclusive kindles to feel same as Mandela, come forward & work together. exclusive implies authority & power. government integrated with people, grateful, with high spirit and powerful, ready to protect and unite._}
+ %        - 2nd: least frequent {_crosses audience’s boundary, shows humble gratitude to international body_}
+ %        - 3rd: frequent {_shows care/respect to people who died during the struggle, invites audience to feel same. Ties speaker+audience in intimate bondage_}
+ %      - Ruijuan
+ %        - 1st: most frequent, mainly plural, {_'I' makes Obama sincere person who remembers gratitude and will repay it. Inclusive 'we' makes Obama on the same boat as audience & persuades to share his proposals. Exclusive 'we' makes them strong leaders; wins Americans’ confidence in new government._}
+ %        - 2nd: infrequent {_“you” attracts attention + creates dialogical feel; Obama shows care/respect to audience => intimate relation_}
+ %        - 3rd: infrequent
+        
+ %    - 1st person dominates, exclusively plural: aiming to unite people and portray Obama as one of them (compare with victory speech where I is used often). we is found in 53% of all main clauses (compare with 38% in victory and 66% in Mandela -- this shows how inauguration is different from victory)
+ %    - 2nd person used almost exclusively to address (confront) 3rd parties such as foreign countries (including enemies), setting a strong (and somewhat patronising) tone
+ %    - 3rd person (mainly they/their) is used to refer to those not present, mainly to earlier generations who worked/fought hard so the present-day Americans could live decent lives, and to American soldiers. By referring to these shared American values and symbols, Obama unites the audience. 
 }
 
 \bibliographystyle{apalike}
