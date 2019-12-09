@@ -1,0 +1,81 @@
+% !TEX options=--shell-escape
+
+\documentclass[11pt]{article}
+
+\usepackage{geometry}
+\usepackage[hidelinks, colorlinks=true, linkcolor=blue, citecolor=blue]{hyperref}
+
+% APA citation style
+\usepackage{natbib}
+\usepackage{apalike}
+
+\usepackage{setspace} % line spacing
+
+% Paragraph indentation (first line)
+\setlength{\parindent}{0em}
+% Paragraph spacing
+\setlength{\parskip}{.7em}
+
+\usepackage{caption}
+
+% Names of subsections and figures in cross-references with \autoref{}
+\renewcommand*{\sectionautorefname}{Section}%
+\renewcommand*{\subsectionautorefname}{Section}%
+\renewcommand*{\figureautorefname}{Fig.}%
+
+\usepackage{textcomp} % fancy symbols in text mode (e.g. right arrow)
+\newcommand{\textapprox}{\raisebox{0.5ex}{\texttildelow}}
+
+% For images
+\usepackage{graphicx, rotating}
+
+% Center caption text for images
+\usepackage[justification=centering]{caption}
+
+% styling of quotes (use like: \Quote{text}{label}), including their counting and referencing with \qref{label}
+\newcounter{quotecount}
+\newcommand{\Quote}[2]{\vspace{0.4cm}\\ 
+	\hspace*{1cm}\parbox{12cm}{\em #1 \refstepcounter{quotecount}\label{#2}}\hspace*{1cm}(\arabic{quotecount})\\[0.4cm]}
+\newcommand{\qref}[1]{(\autoref{#1})}
+
+\usepackage{listings}
+\lstset{
+  columns=flexible,
+  basicstyle=\small\ttfamily,
+  mathescape=true,
+  escapeinside=||
+}
+
+% \onehalfspacing
+\title{\LARGE Introduction to Discourse Analysis -- Assignment 2 \\ Task 5}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\,
+\vspace{-5em}
+
+%%%%%%%%%%%%%%%%%%%%%
+% total words: XXXX %
+%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Introduction}{
+}
+
+\section{Theoretical background}{
+}
+
+\section{Conclusions}{
+}
+
+\bibliographystyle{apalike}
+\bibliography{B083350.bib}
+
+\section*{Appendix}{
+\include{task5-data}
+}
+
+\end{document}

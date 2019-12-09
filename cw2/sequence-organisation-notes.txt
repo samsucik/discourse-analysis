@@ -1,0 +1,62 @@
+sequence organisation
+SEQUENCES OF ACTIONS
+- based on speaking as acting! sequences of actions!
+- actions can be: asking, answering, disagreeing, offering, contesting, requesting, teasing, complying, performing, noticing, promising, (…) inviting, announcing, telling, complaining, agreeing...
+- actions organised sequentially, ordered
+- one action makes some others relevant; actions occasioned by some previous ones
+- adjacency pair: 1st, 2nd
+- action DOESN'T HAVE TO BE SPOKEN: silence, physically doing something
+- a 1st requires/calls for a 2nd (1st may be repeated if 2nd didn't happen!)
+Adjacency pairs are sequences of two utterances that are: (missing source! maybe: (Schegloff and Sacks (1973), simplified by Levinson (1983: 303-4)))
+(i)	adjacent
+(ii) produced by different speakers
+(iii) ordered as a first pair part (FPP) and a second pair part (SPP)
+(iv) typed, so that a particular first part requires a particular second part (or range of second parts)
+- Having produced a first part of some pair, current speaker must stop speaking, and next speaker must produce at that point a second part of the same pair.
+  - goes back to turn taking (selecting someone to produce the 2nd)
+- verbalised form ("do you have driver's licence") may not accurately actual action ("may I see it?")?
+  - also some actions can be prerequisites to main actions, and that can be ANTICIPATED
+PREFERENCE
+- 1st occasions different 2nds, but also carries <preference>!
+  - preferred: short form
+  - dispreferred 2nds may be longer, contain hesitation, account (explanation)...
+  - dispreferred: <<<delay, appreciation, mitigated refusal/negation, account>>>
+- “In the vast majority of sequence types, there are (…) alternative responses which a first pair part makes relevant and a recipient of a first pair part may employ (…), (but) alternative types of second pair part which a first pair part makes relevant are not equivalent, or equally valued. They are asymmetrical alternatives” (Schegloff, 2007: 58-59)
+- preference/dispreference markers: delays, prefaces, accounts... (don't have to always have ALL OF THEM)
+  - 1st can be produced with anticipation of dispreferred 2nd, and hence can accomodate for that (e.g. my making the refusal seem less rude)
+  - upon noticing dispreference markers in 2nd, author of 1st can interrupt/restate the 1st to get the preferred 2nd
+  - the markers/signals are useful resources read and reacted to by participants!
+EXPANSIONS: pre-sequence, post-sequence, 
+PRE-SEQUENCE
+- preliminary sequence before main event; it is NOT FINAL
+- checking conditions for main action
+- 2nd can anticipate from a pre-sequence the main action, and can react in advance to the main 1st!
+- anticipation can also be shown in "do you have a pen?" "yes, WHY?"
+- Levinson, 1983:346-7
+	T1: 	A question checking whether some precondition obtains for the 	action to be 	performed in T3
+	T2: 	An answer indicating whether precondition obtains
+	T3:  	Prefigured action
+	T4:  	Response to action
+	Note: 
+	- If in T2, precondition is said not to obtain, then action in T 3 is withheld
+	- T2 may invite action in the form of ‘Why?’
+	- Speakers often anticipate T3, therefore moving from T1 directly to T4.
+POST-EXPANSIONS
+- after 1st-2nd (third)
+- may be really crucial (e.g. feedback from teacher on students' answers -- missing third may be interpreted as answer being wrong)
+- third may be systematically missing (journalists not reacting to interviewees' answers), showing neutrality
+- third can become a 1st itself, then it becomes non-minimal expansion; otherwise, it's terminal (minimal), "proposing sequence closing"
+- non-minimal post-expansion is a connector to keep conversation going
+INSERTIONS
+- 2nd delayed
+- can be used recursively!
+- post-first: going back to 1st (maybe didn't get it, didn't understand...)
+- pre-second: checking conditions before producing 2nd (kinda like pre-sequence)
+OUT-OF-SEQUENCE talk
+- where there are multiple actions in parallel (e.g. cashier talking to me about weather but also scanning my items and calculating total price)
+- shift between parallel topics can be marked (e.g. by different language in bilinguals)
+
+reciprocal sequences:
+counter: 
+successive parts of a course of action (unrelated sequences; only bridged by external frame/overall order)
+- e.g. in SubWay when making a sandwich or in doctor-patient interaction
