@@ -34,7 +34,7 @@
 % Center caption text for images
 \usepackage[justification=centering]{caption}
 
-% styling of quotes (use like: \Quote{text}{label}), including their counting and referencing with \qref{label}
+% styling of examples (use like: \Example{title text}{text}{label}), including their counting and referencing with \autoref{label}
 \newcounter{examplecount}
 \newcommand*{\examplecountautorefname}{E\kern-0.3em}
 \newcommand{\Example}[3]{
@@ -44,7 +44,6 @@
 
 	\hspace*{1.5cm}\parbox{12cm}{\texttt{#2}\label{#3}}\\[0.4cm]
 }
-\newcommand{\eref}[1]{(\autoref{#1})}
 
 \usepackage{listings}
 \lstset{
@@ -54,7 +53,8 @@
   escapeinside=||
 }
 
-% \onehalfspacing
+\usepackage[none]{hyphenat}
+
 \title{\LARGE Introduction to Discourse Analysis -- Assignment 2 \\ Task 5}
 \date{}
 \author{}
@@ -67,7 +67,7 @@
 \vspace{-5em}
 
 %%%%%%%%%%%%%%%%%%%%%
-% total words: XXXX %
+% total words: 1549 + 102 - 5 - 8 - 7 - 2 - 10 - 6 %
 %%%%%%%%%%%%%%%%%%%%%
 
 % INSTRUCTIONS
@@ -93,19 +93,22 @@
 % - word-: cut-off
 
 \section*{Introduction}{
-
+	% CA about actions
+	% - CA (fathers Schegloff, Sacks) about social actions in speaking, not about speaking itself
+	Conversation analysis 
+	% helps analyse social interactions by relating the surface form of talk and underlying actions
+	approaches conversations as social interactions, relating the surface form of talk and the underlying actions of participants.
+	% i analyse short conversation using sequential organisation, using preference to analyse how potentially socially problematic actions (asking for a big favour, and refusing to help) are realised in it
+	In this work, I look at a short conversation, applying the \textit{sequential organisation} approach. In particular, I use the concept of \textit{preference} to analyse how potentially socially problematic actions -- asking for a big favour, and refusing to help -- are realised.
 }
 
 % 736
 \section*{Theoretical background}{
-	% - CA (fathers Schegloff, Sacks) about social actions in speaking, not about speaking itself
-	Within Conversation analysis as focused on \textit{actions} in talk, not just on speaking itself,
-	% 	- actions broader than talking: can be non-verbal too
 	% - speaking is mostly sequential; seq. org. about how actions are ordered in interaction (conversation), how an action influences what comes next, eventually constructing orderly sequences of talk
-	Sequantial organisation explores how actions (requesting, inviting, telling...) are ordered when they surface in interaction (conversation); how an action influences successive actions so that orderly sequences of talk are created.
+	Sequential organisation explores how actions (requesting, inviting, telling...) are ordered when they surface in conversation; how an action influences successive actions so that orderly sequences of talk are created.
     
     % - notion of ``conditional relevance'': an action makes a certain next action(s) relevant (or even expected), e.g. a question makes an answer be the relevant next action.
-    The concept of \textit{conditional relevance} \citep{Schegloff_1968} describes how one action makes certain next action(s) relevant (suitable, or even required if the talk is to proceed orderly), e.g. a question inviting an answer.
+    \textit{Conditional relevance} \citep{Schegloff_1968} describes how one action makes certain next action(s) relevant (suitable, or even required if the talk is to proceed orderly), e.g. a question inviting an answer.
     % - hence adjacency pairs: basic units of seq. org. \citep{Schegloff_1973}. defined by \citet[p.~64]{Sidnell_2010} as: ``Adjacent. Produced by different speakers. Ordered as a first pair part (FPP) and a second pair part (SPP). Typed, so that a particular FPP provides for the relevance of a particular SPP (or some delimited range of SPPs)''
     Thus, long sequences consist of basic units -- \textit{adjacency pairs}; defined by \citet[p.~64]{Sidnell_2010} as pairs of utterances:
     \begin{enumerate}
@@ -114,96 +117,102 @@
     	\item Ordered as a first pair part (FPP) and a second pair part (SPP)
     	\item Typed, so that a particular FPP provides for the relevance of [occasions] a particular SPP (or some delimited range of SPPs)
     \end{enumerate}
-    The type of a pair can be e.g. greeting-greeting or question-answer, an example adjacency pair of the latter type being:
+    The \textit{type} of a pair can be e.g. greeting-greeting or question-answer, an example adjacency pair of the latter type being:
     % - example adj. pair \Example{from \citet[p.~107]{Liddicoat_2007}}{John: What time' s it? \\Betty: Three uh clock.}{adj-pair}
     \Example{from \citet[p.~107]{Liddicoat_2007}}{John: What time' s it? \\Betty: Three uh clock.}{adj-pair}
-    %   - the two lines are FPP and SPP, adjacent, produced by different speakers, and <<typed>> -- FPP is a question, which makes relevant a SPP of type answer
-    %   - also note that speaker 1 gives speaker 2 space to react (in this case they stop speaking), or else they can't expect a SPP to occur!
-    Notice too how John stops speaking to give Betty space to produce a SPP (or else there would be no interaction!)
-    %   - also, a FPP requires a relevant SPP! if Betty stayed silent, John would likely repeat his question (unless he'd interpret the silence a relevant response)
-    and how Betty produces a \textit{relevant} SPP -- if she stayed silent, John could repeat his question (his FPP \textit{requiring} a SPP) or interpret Betty's silence as a response.
+    %   - the two lines are FPP and SPP, adjacent, produced by different speakers, and <<typed>> -- FPP is a question, which makes relevant an SPP of type answer
+    %   - also note that speaker 1 gives speaker 2 space to react (in this case they stop speaking), or else they can't expect an SPP to occur!
+    Notice too how John stops speaking, giving Betty space to produce an SPP (otherwise, there would be no interaction!)
+    %   - also, an FPP requires a relevant SPP! if Betty stayed silent, John would likely repeat his question (unless he'd interpret the silence a relevant response)
+    and Betty's producing of a \textit{relevant} SPP -- if she stayed silent, John could repeat/restate his question (his FPP \textit{requiring} an SPP) or interpret Betty's silence as a response.
     % - by producing a matching SPP, speaker 2 shows they understood the FPP, and a conversation continues orderly
     By producing a matching SPP, Betty also shows understanding of the preceding FPP and the conversation continues smoothly.
 
-    % - a FPP doesn't occasion one particular SPP (and a meaningful reaction can also be non-verbal, e.g. silence or in \eref{adj-pair} Betty showing John her wristwatch)
-    Importantly, a FPP can occasion multiple SPPs (including non-verbal actions, e.g. Betty showing John her wristwatch),
-    % - BUT given a FPP, not all relevant SPPs may be equally valued: ``some responses are problematic for social relationships, while others are not'' \citep[p.~111]{Liddicoat_2007}
-    but they are often unequally valued -- ``some responses are problematic for social relationships, while others are not'' (\citeauthor[p.~111]{Liddicoat_2007}).
-    % - we can talk of usual/typical reactions as preferred (e.g. Betty's answer in \eref{adj-pair}), whereas less normal/socially appropriate reactions are termed dispreferred (e.g. Betty answering ``I don't know'' instead).
-    Usual/unsurprising reactions are termed \textit{preferred} (e.g. Betty's particular answer in \eref{adj-pair}); the less socially appropriate/normal are \textit{dispreferred} (e.g. if Betty answered ``I don't know'').
+    % - an FPP doesn't occasion one particular SPP (and a meaningful reaction can also be non-verbal, e.g. silence or in \autoref{adj-pair} Betty showing John her wristwatch)
+    Importantly, an FPP can occasion many possible SPPs (including non-verbal actions, e.g. Betty showing John her wristwatch),
+    % - BUT given an FPP, not all relevant SPPs may be equally valued: ``some responses are problematic for social relationships, while others are not'' \citep[p.~111]{Liddicoat_2007}
+    but they are often unequally valued: ``some responses are problematic for social relationships, while others are not'' \citep[p.~111]{Liddicoat_2007}.
+    % - we can talk of usual/typical reactions as preferred (e.g. Betty's answer in \autoref{adj-pair}), whereas less normal/socially appropriate reactions are termed dispreferred (e.g. Betty answering ``I don't know'' instead).
+    Usual/unsurprising reactions are termed \textit{preferred} (e.g. the answer in \autoref{adj-pair}); less socially appropriate/normal are \textit{dispreferred} (e.g. if Betty answered ``I don't know'').
     % - typically, the participants are aware of the social norms which make certain reactions preferred or dispreferred, and make the two surface differently in their speaking:
-    Aware of social norms, participants typically treat the two types differently in speaking:
-    % - preferred reactions, such as accepting an invitation, typically surface as short and immediate, like A's accepting in \eref{pref}
-    preferred reactions (e.g. accepting an invitation) surface as short and immediate:
+    Aware of social norms, participants typically treat the two types differently in speaking.
+    % - preferred reactions, such as accepting an invitation, typically surface as short and immediate, like A's accepting in \autoref{pref}
+    Preferred reactions (e.g. accepting an invitation) surface as short and immediate:
     \Example{from \citet[p.~58]{Casson_1981}}{B: Why don't you come up and see me some[times\\A: \hspace{18.5em}[I would like to}{pref}
     % - dispreferred reactions, on the other hand, surface in ways that mitigate their potential negative social impact, see 
-    while dispreferreds surface in ways that mitigate their potential negative social impact:
+    while dispreferreds surface in ways that mitigate potential negative social impact:
     \Example{adapted from \citeauthor[p.~110]{Liddicoat_2007}}{Harry: I don' have much tuh do on We:nsday.\\\phantom{.}~\hspace{2.9em}(.)\\\phantom{.}~\hspace{2.9em}w' d yuh like tuh get together then.\\\phantom{.}~\hspace{2.9em}(0.3)\\Joy: \ \ huh we::llhh I don' really know if yuh see\\\phantom{.}~\hspace{2.9em}i' s a bit hectic fuh me We:nsday yih know}{dispref}
     % - the rejection of the invitation is nearly not as overt as the acceptance. it comes with a delay of 0.3s, the hesitant ``we::ll'' with out-breathing, with hedges (``I don' really know'' and ``\textbf{a bit} hectic''), and explanations (accounts) for the refusal rather than a clear refusal itself. these signs are termed dispreferrence markers -- compare with shortness, overtness and lack of account as possible preferrence markers.
-    Joy's rejection is not overt at all, comes with 0.3s delay, a hesitant ``we::ll'', hedges (``I don' really know'' and ``\textbf{a bit} hectic''), and explanations (accounts) rather than a clear refusal itself. These common signs -- \textit{dispreference markers} -- contrast with the shortness, overtness and lack of account (\textit{preference markers}) in \eref{pref}.
+    Joy's rejection is weak, comes with 0.3s delay, a hesitant ``we::ll'', hedges (``I don' really know'', ``\textbf{a bit} hectic''), and explanations (accounts) rather than a clear refusal. These common signs -- \textit{dispreference markers} -- contrast with the shortness, overtness and lack of account (\textit{preference markers}) in \autoref{pref}.
     
     % - as \citet{Liddicoat_2007} points out, not just SPPs, but also FPPs can be dispreferred, e.g. requests, which are then ``held back as later topics'' and ``accompanied by accounts and mitigations, which occur before the request itself'' -- i.e. dispreferrence markers, as seen in XXX, following Jim's previous (preparatory) explanations of his pitiful situation:  he provides a lengthy account and then makes the actual request in an indirect way using ``was wondering'' and ``could''.
-    Importantly, FPPs can be dispreferred too (e.g. requests) and are then ``held back as later topics'' and ``accompanied by accounts and mitigations, which occur before the request itself'' (\citeauthor[p.~122]{Liddicoat_2007}):
+    Importantly, FPPs can be dispreferred too (e.g. requests) and are then ``held back as later topics'' and ``accompanied by accounts and mitigations, which occur before the request itself'' \citep[p.~122]{Liddicoat_2007}:
     % - \Example{from \citet[p.~122]{Liddicoat_2007}}{Jim: well my car has broken down an they don' know\\\phantom{.}~\hspace{2.1em}if it will be fixed by then an' I w' z wondering\\\phantom{.}~\hspace{2.1em}if I c' d borrow your car.}{dispref-fpp}
     \Example{from \citeauthor[p.~122]{Liddicoat_2007}}{Jim: well my car has broken down an they don' know\\\phantom{.}~\hspace{2.1em}if it will be fixed by then an' I w' z wondering\\\phantom{.}~\hspace{2.1em}if I c' d borrow your car.}{dispref-fpp}
-    Following his previous (preparatory) explanations of the pitiful situation, in the first 2 lines of \eref{dispref-fpp} Jim provides a lengthy account before making the actual request in an indirect way using ``was wondering'' and ``could''.
+    Following his previous (preparatory) explanations of the pitiful situation, in the first 2 lines of \autoref{dispref-fpp} Jim provides a lengthy account before wording the actual request indirectly, using ``was wondering'' and ``could''.
 
     % SPP can become FPP
     When moving beyond single adjacency pair, the SPP of one pair can become the FPP of the next pair, giving rise to longer action sequences. 
     % pairs can also be expanded to create longer sequences: pre-, post- and inserts. all of these can be also long sequences!
     Alternatively, a pair can be expanded by adding an element before (pre-expansion), between (insert-expansion) or after (post-expansion) the FPP and SPP. Indeed, the added element can itself be a longer sequence.
     % pre-expansions: w.r.t. preference, a dispreferred tends FPP e.g. the main request sequence tends to be preceded by a pre-sequence which checks if preconditions are met (e.g. if the person needs their car atm), and which may make the request more relevant (and less dispreferred) by perhaps explaining the reasons for it.
-    With regard to preference, a pre-sequence may, as already hinted, preceed a dispreferred FPP and check if some preconditions are met (e.g. if the other person needs their car right now) and/or make the request more relevant (less dispreferred) by perhaps first explaining the situation.
-    % insert-expansions: actions before producing SPP -- whether clarifying the FPP or requesting further information upon which a SPP depends
-    An insert-sequence can be employed e.g. before a dispreferred SPP to mitigate the contrast with the FPP (similar to delaying the SPP using a pause like in \eref{dispref}).
+    With regard to preference, a pre-sequence may, as already hinted, precede a dispreferred FPP and check if some preconditions are met (e.g. if the other person needs their car right now) and/or make the request more relevant (less dispreferred) by perhaps first explaining the situation.
+    % insert-expansions: actions before producing SPP -- whether clarifying the FPP or requesting further information upon which an SPP depends
+    An insert-sequence can be employed e.g. before a dispreferred SPP to mitigate the contrast with the FPP (similar to delaying the SPP using a pause like in \autoref{dispref}).
     % post-expansions: Q-A-assessment (minimal vs non-minimal)
-    Finally, a post-expansion adds to the pair -- either in a \textit{minimal} way which effectively closes the sequence (such as adding ``Right, okay'' in \eref{adj-pair}), or in a \textit{non-minimal} way where the added ``third pair part'' itself becomes a FPP and makes some next action relevant.
+    Finally, a post-expansion adds to the pair -- either in a \textit{minimal} way which effectively closes the sequence (such as adding ``Right, okay'' in \autoref{adj-pair}), or in a \textit{non-minimal} way where the added ``third pair part'' itself becomes an FPP and makes some next action relevant.
 }
 
 \section*{Analysis}{
 	% At a high level, the data (shown in \autoref{fig:data-marked}) is a short call, whereby Donny calls Marcia and starts describing how his car broke down in Glen while he needs to be in Brentwood -- supposedly fairly soon, and he supposedly needs a new car to get there. Marcia interrupts him and explains how she would love to help, but she needs to leave for some duties very soon (supposedly using her car). Then, Donny closes the talk very quickly, planning to call someone else (supposedly to borrow a car from them).
-	At a high level, the data (\autoref{fig:data-marked}) is a short call; Donny calls Marcia and starts describing how his car broke down while he needs to be somewhere else (supposedly fairly soon and needing a new car to get there). Marcia reacts, explaining she would love to help, but she herself needs to leave very soon (supposedly using her car). Then, Donny closes the talk very quickly, planning to call someone else (supposedly to borrow a car from them).
+	The data (\autoref{fig:data-marked}) is a short call; Donny calls Marcia, starts describing how his car broke down, he needing to be somewhere else (supposedly soon, and hence needing another car). Marcia reacts, explaining she would love to help but she herself has to go (supposedly using her car). Then, Donny concludes he would call someone else and closes the conversation quickly.
 
 	\begin{figure}[h!tb]
 		\centering
 		\includegraphics[width=\columnwidth]{../data-marked.pdf}
-		\caption{The data; sequence organisation marked on the left. Black circles mark FPPs, blank circles SPPs; $\boldsymbol{\mathbf{\otimes}}$ and $\boldsymbol{\mathbf{\oplus}}$ mark minimal/non-minimal post-expansions, respectively. Where connected by lines without arrowheads (lines 3, 5), and where curly braces are used (e.g. lines 21--23), it means multiple lines forming one pair part.}
+		\caption{The data; sequence organisation marked on the left. Black circles mark FPPs, blank circles SPPs; $\boldsymbol{\mathbf{\otimes}}$ and $\boldsymbol{\mathbf{\oplus}}$ mark minimal/non-minimal post-expansions, respectively. Where connected by lines without arrowheads (L3,5), and where curly braces are used (e.g. L21-23), it means multiple lines forming one pair part.}
 		\label{fig:data-marked}
 	\end{figure}
 
 	% I will now chronologically step through and describe the excerpt's sequential organisation, particularly with respect to Marcia's account (L21-23). (All adjacency pairs I also marked directly in \autoref{fig:data-marked}.)
-	I chronologically step through and describe the excerpt's sequential organisation, particularly with respect to Marcia's account (L21-23). (All discussed adjacency pairs marked also in \autoref{fig:data-marked}.)
+	I chronologically step through and describe the excerpt's sequential organisation, particularly with respect to Marcia's reaction (L21-23). (All adjacency pairs marked also in \autoref{fig:data-marked}.)
 
-	L1-2 is a typical summons-answer pair (discussed in \citet[p.~126]{Liddicoat_2007}), a pre-sequence without much own meaning, but enabling a conversation to begin. Notice the non-verbal action of Donny in L1 (face-to-face, it could have been ``Hey Marcia!'').
+	L1-2 is a typical \textit{summons-answer} pair \citep[p.~126]{Liddicoat_2007}, a pre-sequence enabling a conversation to begin. Notice Donny's non-verbal action (L1) -- face-to-face, it could be ``Hey, Marcia!''.
 	% L2 as FPP inquires who the caller is, upon which Donny identifies himself (L3+5).
-	As a FPP, L2 asks the caller to identify themselves, and Donny does that in L3\&5.
+	As an FPP, L2 asks the caller to identify themselves, and Donny does that in L3\&5.
 	% Marcia's interruption (L4) is not clear, but could signal that she recognised Donny already from L3, or that she confirms her identity after Donny addressed her by name in L3. Either way, Donny was not finished and ends his FPP in L5.
-	Marcia's interruption (L4) I find ambiguous -- she could signal recognition of Donny, or confirm her identity after Donny addressed her. Either way, Donny continues and finishes in L5.
+	Marcia's interruption (L4) I find ambiguous -- she could signal recognition of Donny, or confirm her identity after Donny addressed her. Either way, Donny continues, finishing in L5.
 	% L3+5 with L6 is a classical greeting-greeting pair which ends the opening section of the call. Note that this is a short form; a common, longer one would also add ``how are you?'' to the greetings, potentially lengthening the call opening with further chit-chat.
-	L3\&5 with L6 is a standard greeting-greeting pair, here ending the call's opening. Notice the brief form; commonly, an added ``how are you?'' could prolong the opening.
+	The standard greeting-greeting pair (L3\&5, L6) ends the call's opening. Notice the brief form; often, ``how are you?'' would be added.
 
-	After the opening, which itself can be viewed as a pre-sequence, Donny pushes the conversation forward with a further pre-sequence in L7 -- a \textit{pre-telling} (\citeauthor[p.~136]{Liddicoat_2007}) pair: He signals having something to tell and Marcia gives a ``go-ahead'' signal (L8).
-	Then, Donny's telling itself runs from L9-L20 (which will later turn out to be a long pre-sequence). 
-	Donny's FPP (L9) announces unfortunate news, making a sympathetic SPP relevant, but silence follows (L10) -- attributable to Marcia's lack of relevant reaction.
-	Hence, Donny makes a post-expansion (L11) by introducing further bad news, making a sympathetic reaction even more relevant, if not socially required.
-	To L11 as a FPP, Marcia finally responds (L12-13), but her ``Oh::'' I see merely as signalling receival of new information (see detailed analysis of the role of ``oh'' by \citet{Heritage_1984}). Then, she goes silent (L13), not taking a stance or assessing Donny's situation (the silence can be partly attributed to Donny giving Marcia time to continue).
-	Eventually,	Donny accepts Marcia's short response and definitely closes the telling sequence by adding a minimal post-expansion (L14) -- merely an outbreath -- so that he can move on.
+	After the opening, which can be viewed as a pre-sequence, Donny pushes the conversation forward with a further pre-sequence (L7) -- a \textit{pre-telling} \citep[p.~136]{Liddicoat_2007} pair: Signalling he has something to tell and Marcia giving a ``go-ahead'' (L8).
+	Then, Donny's telling unravels (L9-L20), which will turn out to be another pre-sequence.
+	Donny's FPP (L9) announces unfortunate news, inviting a sympathetic SPP, but silence follows (L10) -- attributable to Marcia's lack of relevant response.
+	Hence, Donny post-expands (L11), introducing further bad news, making a sympathetic reaction even more relevant (or even required).
+	To L11 as an FPP, Marcia finally responds (L12-13), but her ``Oh::'' I see merely as signalling receipt of new information (see detailed analysis of ``oh'' by \citet{Heritage_1984}). Then, Marcia goes silent (L13), not taking further stance or assessing Donny's situation (the silence can also be Donny giving her space to continue).
+	Eventually,	Donny accepts Marcia's position; closes the telling sequence by minimally post-expanding (L14 -- merely an outbreath) before moving on.
 
-	Across L15-20, Donny makes the FPP of the conversation's main sequence (the telling in L7-14 being a pre-sequence), putting forward his request. The FPP's dispreferredness is realised using multiple markers: length, hesitations (L15, then breathing in L17, and tokens ``a:t u:h'' (L20)), pauses (L16, 17, 19, 20), only slowly moving to the point, placing it after a hedge (``I don't know if it's:ssible'') and a warrant (``see I haveta open up the ba:nk''). Without directly asking Marcia for her car, the request comes across very clearly and Marcia reacts (her SPP in L21-23).
+	Across L15-20, Donny starts the conversation's main sequence (following the pre-request telling), putting forward his request. His FPP's dispreferredness is heavily marked by: length, hesitations (L15, breathing (L17), tokens ``a:t u:h'' (L20)), pauses (L16, 17, 19, 20), only slowly moving to the point, placing it after a hedge (``I don't know if it's:ssible'') and a warrant (``see I haveta open up the ba:nk''). Without directly requesting Marcia's car, the request comes across clearly and Marcia has to react (L21-23).
 
-	Marcia's reaction is also dispreferred (a refusal) and heavily marked: having short pauses, and hesitations where she stops to repair her talk (see the \verb|word-| pattern (L21-22)). Starting with sympathetic ``Yeah:'' -- acknowledging Donny's pitiful situation, then confirming she understands the request (``en I know you want-''), showing her willingness to help (``en I would''), before finally providing an account for her inability to help right now (``I've gotta leave in aybout five min(h)tes'').
+	Marcia's reaction is also dispreferred (a refusal) and heavily marked: with short pauses, and hesitations where she stops to repair her talk (the \verb|word-| patterns (L21-22)). Starting with sympathetic ``Yeah:'' -- acknowledging Donny's pitiful situation; then confirming she understands the request (``en I know you want-''); showing willingness to help (``en I would''); before finally providing an account for not helping (``I've gotta leave in aybout five min(h)tes'').
 
-	Without directly refusing the request, Marcia's SPP gets understood by Donny; he non-minimally post-expands (L24-25), acknowledging Marcia's refusal (``Okay then'') and lessening its dispreferredness by outlining contingency plans (to call someone else). The post-expansion is also a FPP -- a summary of the conversation's main sequence, starting a typical \textit{sequence-closing sequence}, which (\citeauthor[p.~168]{Liddicoat_2007}) normally consists of:
+	Without directly refusing, Marcia's SPP is understood by Donny; he non-minimally post-expands (L24-25), acknowledging Marcia's refusal (``Okay then'') and mitigating its dispreferredness by outlining contingency plans (to call someone else). The post-expansion is also an FPP -- summarises the main sequence and starts a typical \textit{sequence-closing sequence}, which \citep[p.~168]{Liddicoat_2007} normally consists of:
 	\begin{enumerate}
-		\item a summary/assessment proposing to close,
-		\item a go-ahead signal for closing,
-		\item the final turn, closing the sequence.
+		\item summary/assessment proposing to close,
+		\item go-ahead signal for closing,
+		\item final turn, closing the sequence.
 	\end{enumerate}
-	However, Marcia doesn't co-operate -- stays silent (L26), upon which Donny post-expands (L27), repeating his suggestion-to-close more explicitly (``okay?''). To this FPP, Marcia responds quickly with the preferred ``go-ahead'' SPP (L28). Then, Donny readily closes the conversation with a typical closing pair (L29-30).
+	However, Marcia uncooperatively stays silent (L26), upon which Donny post-expands (L27), repeating his suggestion-to-close more explicitly (``okay?''). To this FPP, Marcia responds quickly with the preferred ``go-ahead'' SPP (L28). Then, Donny readily closes the conversation with a typical closing pair (L29-30).
 }
 
-\section*{Conclusions}{
-	Through sequential organisation analysis, we saw how the conversation unrolls in pre-sequences (pre-telling~$\rightarrow$~telling), preparing the ground for the main sequence (a request). Throughout, Marcia is minimalistic and uncooperative in her responses, which can be attributed to her being busy, but I also interpret it as early signals to Donny -- in an anticipation of some request -- that she would refuse. Donny ignores these, pushes on, until making the actual request. At that point Marcia cannot just signal anymore and refuses openly. The concept of preference lets us see how -- although both participants are in a hurry -- the strong social norms make them present the (dispreferred) request and refusal in characteristic elongated ways.
+\section*{Overall view and conclusions}{
+	Through sequential organisation analysis, we saw the conversation unrolling in pre-sequences (opening~$\rightarrow$~pre-telling~$\rightarrow$~telling), preparing the ground for the main request sequence.
+	Throughout, Marcia is minimalistic and uncooperative -- perhaps because being busy, but I also interpret it as early signals to Donny: 
+	Figuring out that his speaking is only a pre-sequence, she anticipates \textit{some} request and signals unavailability to help.
+	Donny ignores these signals, pushes on, until making the actual request.
+	At that point, Marcia cannot just signal anymore and refuses openly.
+
+	The framework of \textit{preference} lets us see how -- although both participants are in a hurry -- the strong social norms make them present the dispreferred request and refusal in characteristic, elongated ways.
 }
 
 \bibliographystyle{apalike}
